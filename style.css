@@ -1,0 +1,210 @@
+
+/* General Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #243b55;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #dce6f1;
+}
+
+/* Main Section */
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+/* Dashboard Card */
+.dashboard {
+    margin-bottom: 25px;
+}
+
+.stat-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #00000015;
+    text-align: center;
+    max-width: 300px;
+}
+
+.stat-card h3 {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.stat-card p {
+    font-size: 32px;
+    font-weight: bold;
+    color: #243b55;
+}
+
+/* Form Section */
+.form-section,
+.employee-section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #00000015;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #243b55;
+}
+
+/* Form Inputs */
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+form label {
+    font-weight: bold;
+    align-self: end;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#editId {
+    display: none;
+}
+
+/* Buttons */
+button {
+    padding: 11px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #243b55;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+form button {
+    grid-column: 1 / -1;
+    margin-top: 8px;
+}
+
+button:hover {
+    background-color: #365879;
+}
+
+/* Search Box */
+#searchInput {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Employee Table */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 750px;
+}
+
+th,
+td {
+    padding: 13px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #243b55;
+    color: white;
+}
+
+tbody tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* Action Buttons */
+.edit-btn {
+    background-color: #e6a23c;
+    margin-right: 5px;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+.edit-btn:hover {
+    background-color: #c88720;
+}
+
+.delete-btn:hover {
+    background-color: #b52a37;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #243b55;
+    color: white;
+    padding: 18px;
+    margin-top: 30px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 600px) {
+    main {
+        width: 95%;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    form button {
+        grid-column: auto;
+    }
+
+    .form-section,
+    .employee-section {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+}
